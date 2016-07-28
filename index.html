@@ -3,26 +3,26 @@
 
 <head>
   <title>Inline Style Knockout Text</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/inline-knockout.css">
+  <link rel="stylesheet" type="text/css" href="css/inline-knockout-settings.css">
 </head>
 
-<body style="display:flex;flex-direction:column;align-items:center;height:2400px">
-  <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-around;height:800px;font-family:'Futura',sans-serif;font-size:1em;">
-    <p style="font-size:4em";>INLINE STYLE KNOCKOUT TEXT</p>
+<body>
+  <header>
+    <h1>INLINE STYLE KNOCKOUT TEXT</h1>
     <p>&#x25BE; SCROLL DOWN &#x25BE;</p>
-  </div>
+  </header>
 
   <!-- Relevant code starts here -->
-  <div style="position:relative;display:flex;align-items:center;justify-content:center;text-align:center;height:400px;width:600px;">
-    <div style="position:absolute;z-index:-2;background-image: url('https://raw.githubusercontent.com/timhwang21/timhwang21.github.io/master/images/bg.jpg');background-size:cover;background-attachment:fixed;background-position:center;top:0;left:0;height:100%;width:100%;"> </div>
-    <div style="position:relative;display:flex;align-items:center;justify-content:center;font-family:'Futura', sans-serif;font-size:6em;font-weight:bolder;text-align:center;vertical-align:middle;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-image: url('https://raw.githubusercontent.com/timhwang21/timhwang21.github.io/master/images/bg.jpg');background-size:cover;background-attachment:fixed;background-position:center;height:100%;width:100%;">HELLO WORLD</div>
-    <div style="position:absolute;z-index:-1;top:50px;left:50px;background-color:#FFF;height:75%;width:83.33%;"> </div>
-    </div>
-  </div>
+  <content class="knockout-text">
+    <div class="knockout-between"></div>
+  </content>
   <!-- Relevant code ends here -->
 
-  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:1000px;font-family:'Futura',sans-serif;font-size:1em;">
-    <a href="https://timhwang21.github.io/inline-knockout/">Github</a>
-  </div>
+  <footer>
+    <a href="https://www.github.com/timhwang21/inline-knockout/">Github</a>
+  </footer>
 </body>
 
 </html>

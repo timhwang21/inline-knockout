@@ -1,0 +1,30 @@
+/* =========================
+ *  CUSTOMIZE SETTINGS HERE
+ * ========================= */
+
+/* CHANGE BOX HEIGHT */
+.knockout-text {
+  height: 400px;
+  width: 600px;
+}
+
+/* CHANGE BACKGROUND IMAGE */
+.knockout-text::before, .knockout-text::after {
+  background-image: url('https://raw.githubusercontent.com/timhwang21/timhwang21.github.io/master/images/bg.jpg');
+}
+
+/* CHANGE FONT PROPERTIES */
+.knockout-text::after {
+  content: "HELLO WORLD";
+  font-size: 6em;
+  font-weight: bolder;
+}
+
+/* CHANGE INNER BOX PROPERTIES */
+.knockout-text .knockout-between {
+  background-color: #FFF;
+  height: 75%;
+  width: 83.33%;
+  top: 50px;
+  left: 50px;
+}

@@ -1,0 +1,37 @@
+/* ======================================
+ *  CHANGES NOT RECOMMENDED IN THIS FILE
+ * ====================================== */
+
+.knockout-text, .knockout-text::after {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.knockout-text::before, .knockout-text::after {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.knockout-text::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+
+.knockout-text::after {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.knockout-between {
+  position: absolute;
+  z-index: -1;
+}

@@ -1,0 +1,48 @@
+/* ===================
+ *  DEMO PAGE STYLING
+ * =================== */
+
+html {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Futura', sans-serif;
+  justify-content: space-around;
+}
+
+body, header, footer {
+  align-items: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  font-family: inherit;
+  justify-content: inherit;
+  position: inherit;
+}
+
+body {
+  height: 2400px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+header, footer {
+  height: 800px;
+}
+
+a {
+  border: .2em solid #0b0;
+  color: #0b0;
+  padding: .25em .4em;
+  text-decoration: none;
+  transition-duration: .2s;
+}
+
+a:hover {
+  background: #beb;
+}
+
+a:active {
+  background: #6d6;
+}
