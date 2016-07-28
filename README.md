@@ -1,11 +1,11 @@
-Inline-Knockout
+Knockout-TExt
 =======
 
-### [Live Demo](http://timhwang21.github.io/inline-knockout/)
+### [Live Demo](http://timhwang21.github.io/knockout-text/)
 
 ![Screenshot][screenshot]
 
-CSS classes for inline knockout text.
+CSS classes for knockout text. Uses pseudo-classes to keep required code to a minimum.
 
 ## Usage
 
@@ -19,6 +19,6 @@ To add the knockout text element, add the following into your HTML:
 </content>
 ```
 
-Then, change the settings in `inline-knockout-settings.css`.
+Then, change the settings in `knockout-text-settings.css`.
 
 [screenshot]: images/screenshot.png
