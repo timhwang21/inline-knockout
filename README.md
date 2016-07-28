@@ -1,4 +1,4 @@
-Knockout-TExt
+Knockout-Text
 =======
 
 ### [Live Demo](http://timhwang21.github.io/knockout-text/)
