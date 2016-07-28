@@ -4,17 +4,23 @@ html
   flex-direction: column
   font-family: 'Futura', sans-serif
   justify-content: space-around
+  margin: 0
+  padding: 0
+  width: 100%
 
-body, header, footer
+body, header, footer, div
   align-items: inherit
   display: inherit
   flex-direction: inherit
   font-family: inherit
   justify-content: inherit
+  margin: inherit
+  padding: inherit
   position: inherit
+  width: inherit
 
 body
-  height: 2400px
+  // height: 2400px
 
 h1
   font-size: 4em
@@ -22,15 +28,48 @@ h1
 header, footer
   height: 800px
 
+footer
+  justify-content: center
+
 a
-  border: .2em solid #0b0
-  color: #0b0
   padding: .25em .4em
   text-decoration: none
   transition-duration: .2s
+  border: .2em solid
+  margin: 10px
 
-  &:hover
-    background: #beb
+  &.green
+    border-color: #0b0
+    color: #0b0
 
-  &:active
-    background: #6d6
+    &:hover
+      background: #beb
+
+    &:active
+      background: #6d6
+
+  &.white
+    border-color: #fff
+    color: #fff
+
+    &:hover
+      background: rgba(255, 255, 255, 0.5)
+      border-color: #000
+      color: #000
+
+    &:active
+      background: rgba(0, 0, 0, 0.5)
+      border-color: #fff
+      color: #fff
+
+  &.black
+    border-color: #000
+    color: #000
+
+    &:hover
+      background: rgba(0, 0, 0, 0.5)
+      color: #fff
+
+    &:active
+      background: rgba(255, 255, 255, 0.5)
+      color: #000

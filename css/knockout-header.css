@@ -4,8 +4,8 @@
   justify-content: center;
   position: relative;
   text-align: center;
-  height: 400px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
 }
 .knockout-text::before, .knockout-text::after {
   background-image: url("https://raw.githubusercontent.com/timhwang21/timhwang21.github.io/master/images/bg.jpg");
@@ -31,23 +31,23 @@
   position: absolute;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  height: 75%;
-  width: 83.33%;
-  top: 50px;
-  left: 50px;
-  content: "HELLO WORLD";
+  height: 200px;
+  width: 80%;
+  top: 100px;
+  left: 0px;
+  content: "KNOCKOUT HEADER";
   font-size: 6em;
   font-weight: bolder;
-  text-align: center;
+  text-align: left;
 }
 .knockout-text .knockout-between {
   position: absolute;
   z-index: -1;
   background-color: #fff;
-  height: 75%;
-  width: 83.33%;
-  top: 50px;
-  left: 50px;
+  height: 200px;
+  width: 80%;
+  top: 100px;
+  left: 0px;
 }
 
-/*# sourceMappingURL=knockout-text.css.map */
+/*# sourceMappingURL=knockout-header.css.map */
