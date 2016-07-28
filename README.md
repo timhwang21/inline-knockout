@@ -1,7 +1,7 @@
 Knockout-Text
 =======
 
-### [Live Demo](http://timhwang21.github.io/knockout-text/index.html)
+### [Live Demo](http://timhwang21.github.io/knockout-text/)
 
 ![Screenshot][screenshot]
 
