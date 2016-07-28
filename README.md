@@ -13,7 +13,7 @@ Copy `sass/knockout-text.sass` to your project, and compile the SASS into CSS:
 
 ```bash
 sudo gem install sass # if you do not have sass installed
-sass sass/knockout-text.sass css/knockout-text.css
+sass sass/* css/*
 ```
 
 To add the knockout text element, add the following into your HTML:
@@ -24,6 +24,6 @@ To add the knockout text element, add the following into your HTML:
 </content>
 ```
 
-To customize the element, change the settings at the start of `knockout-text.sass`.
+To customize the element, change the settings at the start of `knockout-text.sass`. For example, see [Knockout Header](http://timhwang21.github.io/knockout-text/knockout-header.html).
 
 [screenshot]: images/screenshot.png
