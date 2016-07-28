@@ -9,7 +9,12 @@ CSS classes for knockout text. Uses pseudo-classes to keep required code to a mi
 
 ## Usage
 
-Simply copy the three CSS files into your project.
+Copy `sass/knockout-text.sass` to your project, and compile the SASS into CSS:
+
+```bash
+sudo gem install sass # if you do not have sass installed
+sass sass/knockout-text.sass css/knockout-text.css
+```
 
 To add the knockout text element, add the following into your HTML:
 
@@ -19,6 +24,6 @@ To add the knockout text element, add the following into your HTML:
 </content>
 ```
 
-Then, change the settings in `knockout-text-settings.css`.
+To customize the element, change the settings at the start of `knockout-text.sass`.
 
 [screenshot]: images/screenshot.png

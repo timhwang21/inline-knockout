@@ -1,0 +1,65 @@
+// =========================
+//  CUSTOMIZE SETTINGS HERE
+// =========================
+$image: 'https://raw.githubusercontent.com/timhwang21/timhwang21.github.io/master/images/bg.jpg'
+
+$box-height: 400px
+$box-width: 600px
+
+$text: "HELLO WORLD"
+$text-size: 6em
+$text-weight: bolder
+
+$bg-color: #fff
+$bg-height: 75%
+$bg-width: 83.33%
+$bg-top: 50px
+$bg-left: 50px
+
+// =========================
+//       DO NOT CHANGE
+// =========================
+
+@mixin flex-center
+  align-items: center
+  display: flex
+  justify-content: center
+  position: relative
+  text-align: center
+
+.knockout-text
+  @include flex-center
+  height: $box-height
+  width: $box-width
+
+  &::before, &::after
+    background-image: url($image)
+    background-attachment: fixed
+    background-position: center
+    background-size: cover
+    height: 100%
+    width: 100%
+
+  &::before
+    content: ""
+    left: 0
+    position: absolute
+    top: 0
+    z-index: -2
+
+  &::after
+    @include flex-center
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    content: $text
+    font-size: $text-size
+    font-weight: $text-weight
+
+  .knockout-between
+    position: absolute
+    z-index: -1
+    background-color: $bg-color
+    height: $bg-height
+    width: $bg-width
+    top: $bg-top
+    left: $bg-left

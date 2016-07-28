@@ -1,14 +1,9 @@
-/* ===================
- *  DEMO PAGE STYLING
- * =================== */
-
 html {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Futura', sans-serif;
-  justify-content: space-around;
-}
+  font-family: "Futura", sans-serif;
+  justify-content: space-around; }
 
 body, header, footer {
   align-items: inherit;
@@ -16,33 +11,26 @@ body, header, footer {
   flex-direction: inherit;
   font-family: inherit;
   justify-content: inherit;
-  position: inherit;
-}
+  position: inherit; }
 
 body {
-  height: 2400px;
-}
+  height: 2400px; }
 
 h1 {
-  font-size: 4em;
-}
+  font-size: 4em; }
 
 header, footer {
-  height: 800px;
-}
+  height: 800px; }
 
 a {
-  border: .2em solid #0b0;
+  border: 0.2em solid #0b0;
   color: #0b0;
-  padding: .25em .4em;
+  padding: 0.25em 0.4em;
   text-decoration: none;
-  transition-duration: .2s;
-}
+  transition-duration: 0.2s; }
+  a:hover {
+    background: #beb; }
+  a:active {
+    background: #6d6; }
 
-a:hover {
-  background: #beb;
-}
-
-a:active {
-  background: #6d6;
-}
+/*# sourceMappingURL=styles.css.map */
