@@ -6,8 +6,7 @@ html {
   justify-content: space-around;
   margin: 0;
   padding: 0;
-  width: 100%;
-}
+  width: 100%; }
 
 body, header, footer, div {
   align-items: inherit;
@@ -18,63 +17,55 @@ body, header, footer, div {
   margin: inherit;
   padding: inherit;
   position: inherit;
-  width: inherit;
-}
+  width: inherit; }
 
 h1 {
-  font-size: 4em;
-}
+  font-size: 4em; }
 
 header, footer {
-  height: 800px;
-}
+  height: 800px; }
 
 footer {
-  justify-content: center;
-}
+  justify-content: center; }
 
 a {
+  text-decoration: none; }
+
+.button-link {
   padding: 0.25em 0.4em;
   text-decoration: none;
   transition-duration: 0.2s;
   border: 0.2em solid;
-  margin: 10px;
-}
-a.green {
-  border-color: #0b0;
-  color: #0b0;
-}
-a.green:hover {
-  background: #beb;
-}
-a.green:active {
-  background: #6d6;
-}
-a.white {
-  border-color: #fff;
-  color: #fff;
-}
-a.white:hover {
-  background: rgba(255, 255, 255, 0.5);
-  border-color: #000;
-  color: #000;
-}
-a.white:active {
-  background: rgba(0, 0, 0, 0.5);
-  border-color: #fff;
-  color: #fff;
-}
-a.black {
-  border-color: #000;
-  color: #000;
-}
-a.black:hover {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-}
-a.black:active {
-  background: rgba(255, 255, 255, 0.5);
-  color: #000;
-}
+  margin: 10px; }
+  .button-link.green {
+    border-color: #0b0;
+    color: #0b0; }
+    .button-link.green:hover {
+      background: #beb; }
+    .button-link.green:active {
+      background: #6d6; }
+  .button-link.white {
+    border-color: #fff;
+    color: #fff; }
+    .button-link.white:hover {
+      background: rgba(255, 255, 255, 0.5);
+      border-color: #000;
+      color: #000; }
+    .button-link.white:active {
+      background: rgba(0, 0, 0, 0.5);
+      border-color: #fff;
+      color: #fff; }
+  .button-link.black {
+    border-color: #000;
+    color: #000; }
+    .button-link.black:hover {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff; }
+    .button-link.black:active {
+      background: rgba(255, 255, 255, 0.5);
+      color: #000; }
+
+i {
+  margin-left: 0.5em; }
 
 /*# sourceMappingURL=styles.css.map */

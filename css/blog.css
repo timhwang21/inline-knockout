@@ -156,15 +156,23 @@ body {
     padding: 2em;
     transition-duration: 0.5s;
     width: 100%;
-    word-wrap: normal; }
-    #blog .blog-post i {
-      opacity: 0;
-      transition-duration: 0.5s; }
+    word-wrap: normal;
+    position: relative; }
+    #blog .blog-post .anchor {
+      position: absolute;
+      top: 0; }
     #blog .blog-post:hover {
       background: white;
       color: black; }
-      #blog .blog-post:hover i {
-        opacity: 1; }
+    #blog .blog-post h2 a {
+      color: black; }
+    #blog .blog-post h2 i {
+      opacity: 0;
+      transition-duration: 0.5s; }
+    #blog .blog-post h2:hover a {
+      text-decoration: underline; }
+    #blog .blog-post h2:hover i {
+      opacity: 1; }
   #blog .blog-post + .blog-post {
     margin: 2em 0em; }
 
