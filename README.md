@@ -2,6 +2,7 @@ Knockout-Text
 =======
 
 ### [Live Demo](http://timhwang21.github.io/knockout-text/)
+### [Blog Template](http://timhwang21.github.io/knockout-text/blog.html)
 
 ![Screenshot][screenshot]
 
@@ -15,6 +16,8 @@ Copy `sass/knockout-text.sass` to your project, and compile the SASS into CSS:
 sudo gem install sass # if you do not have sass installed
 sass sass/* css/*
 ```
+
+Alternatively, copy the `.css` files and directly edit them (see the `.scss` file for where to make changes).
 
 To add the knockout text element, add the following into your HTML:
 
