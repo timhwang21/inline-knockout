@@ -1,0 +1,131 @@
+// =========================
+//  CUSTOMIZE SETTINGS HERE
+// =========================
+$image: '../images/bg.jpg'
+
+$box-height: 10em
+$box-width: 80%
+
+$header-text: "LOREM DIMSUM"
+$text-size: 8em
+$text-weight: bolder
+
+$bg-color: #fff
+
+$t-speed: 0.5s
+
+// =========================
+//          MIXINS
+// =========================
+
+@mixin bg-image
+  background-attachment: fixed
+  background-image: url($image)
+  background-position: center
+  background-size: cover
+
+@mixin flex-center
+  align-items: center
+  display: flex
+  justify-content: center
+
+@mixin hover-fade($text)
+  @include knockout($text)
+  transition-duration: $t-speed
+  background: white
+
+  &:hover
+    background: rgba(0, 0, 0, 0.25)
+    &::after
+      -webkit-text-fill-color: white
+      content: $text
+
+@mixin knockout($text)
+  &::after
+    @include flex-center
+    @include bg-image
+    position: absolute
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    content: $text
+
+// =========================
+//         ELEMENTS
+// =========================
+
+body
+  @include bg-image
+
+#knockout-header
+  @include knockout($header-text)
+  height: $box-height
+  width: $box-width + 10%
+  align-self: flex-start
+  background: white
+  margin: 10em 0 20em 0
+  position: relative
+
+  &::after
+    font-size: $text-size
+    font-weight: $text-weight
+    white-space: nowrap
+
+#info-bar
+  @include flex-center 
+  height: 40px
+  width: $box-width
+  min-width: 750px
+  margin: 2em 0em
+  transition-duration: $t-speed
+
+  .nav-link
+    transition-duration: $t-speed
+    height: 100%
+    width: 100%
+    margin: 0px
+    font-size: 2em
+    font-weight: bolder
+    position: relative
+
+  #info1
+    @include hover-fade("HOME")
+
+  #info2
+    @include hover-fade("WORK")
+
+  #info3
+    @include hover-fade("ABOUT")
+
+  #info4
+    @include hover-fade("CONTACT")
+
+#blog
+  width: $box-width
+
+  .blog-post
+    background: rgba(255, 255, 255, 0.9)
+    box-sizing: border-box
+    color: #333
+    max-width: 100%
+    padding: 2em
+    transition-duration: $t-speed
+    width: 100%
+    word-wrap: normal
+
+    i
+      opacity: 0
+      transition-duration: $t-speed
+
+    &:hover 
+      background: white
+      color: black
+
+      i
+        opacity: 1
+
+  .blog-post + .blog-post
+    margin: 2em 0em
