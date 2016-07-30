@@ -115,17 +115,28 @@ body
     transition-duration: $t-speed
     width: 100%
     word-wrap: normal
+    position: relative
 
-    i
-      opacity: 0
-      transition-duration: $t-speed
+    .anchor
+      position: absolute
+      top: 0
 
-    &:hover 
+    &:hover
       background: white
       color: black
 
+    h2
+      a
+        color: black
       i
-        opacity: 1
+        opacity: 0
+        transition-duration: $t-speed
+
+      &:hover 
+        a
+          text-decoration: underline
+        i
+          opacity: 1
 
   .blog-post + .blog-post
     margin: 2em 0em
