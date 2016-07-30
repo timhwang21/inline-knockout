@@ -2,6 +2,7 @@ Knockout-Text
 =======
 
 ### [Live Demo](http://timhwang21.github.io/knockout-text/)
+### [Blog Template](http://timhwang21.github.io/knockout-text/blog.html)
 
 ![Screenshot][screenshot]
 
